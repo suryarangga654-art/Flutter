@@ -3,6 +3,9 @@ import 'package:rpl2/container_widget/LatihanSatu.dart';
 import 'package:rpl2/container_widget/LatihanDua.dart';
 import 'package:rpl2/container_widget/LatihanTiga.dart';
 import 'package:rpl2/list_grid_view/LayoutInstagram.dart';
+import 'package:rpl2/pages/about_page.dart';
+import 'package:rpl2/pages/home_page.dart';
+import 'package:rpl2/routes/app_routes.dart';
 import 'package:rpl2/row_column_widget/RowColumnWidget.dart';
 import 'package:rpl2/row_column_widget/RowWidget.dart';
 import 'package:rpl2/row_column_widget/ColumnWidget.dart';
@@ -22,6 +25,7 @@ import 'package:rpl2/list_grid_view/GridViewBasic.dart';
 import 'package:rpl2/list_grid_view/GridViewBuilder.dart';
 import 'package:rpl2/list_grid_view/GridViewScreen.dart';
 
+
 void main() {
   runApp(MyApp());
 }
@@ -35,14 +39,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Flutter Pertamaku",
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-      //  appBar: AppBar(
-      //   title: Text('RPL 2'),
-      //   backgroundColor: Colors.blue,
-      //   centerTitle:true,
-      //  ) , 
-       body: Layoutinstagram()
-      ),
+      initialRoute: '/',
+      routes: AppRoutes.routes,
     );
   }
 }

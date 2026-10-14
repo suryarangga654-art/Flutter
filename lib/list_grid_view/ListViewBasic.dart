@@ -22,6 +22,17 @@ class ListViewBasic extends StatelessWidget {
               padding: EdgeInsets.all(12),
               child: Text('Pilihan', style: TextStyle(fontSize: 18)),
             ),
+            Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('Halaman About'),
+          ElevatedButton(onPressed: () {
+            Navigator.pop(context);
+          }, 
+          child: Text("Kembali"),
+          ),
+        ],
+      ),
             SizedBox(
               height: 120,
               child: ListView.separated(
