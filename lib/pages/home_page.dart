@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:rpl2/list_grid_view/LayoutInstagram.dart';
 import 'package:rpl2/list_grid_view/ListViewBasic.dart';
 import 'package:rpl2/pages/about_page.dart';
+import 'package:rpl2/pages/form_page.dart';
+import 'package:rpl2/pages/input_page.dart';
 import 'package:rpl2/pages/text_form_filed.dart';
 
 class HomePage extends StatelessWidget {
@@ -25,7 +27,7 @@ class HomePage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return  TextFormFiled();
+                    return  BelajarForm();
                   },
                 ),
               );
@@ -42,7 +44,7 @@ class HomePage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return ListViewBasic();
+                    return FormPage();
                   },
                 ),
               );
