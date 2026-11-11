@@ -41,6 +41,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: AppRoutes.routes,
+      onGenerateRoute: AppRoutes.onGenerateRoute,
     );
   }
 }
@@ -51,16 +52,23 @@ class HelloWidget extends StatelessWidget {
   });
 
   @override
+  @override
   Widget build(BuildContext context) {
-    return Center(
-     child: Text("Hello FLutter",style: TextStyle(
-       color: Colors.indigo,
-       fontSize: 24,
-       fontWeight: FontWeight.bold,
-       backgroundColor: Colors.amber,
-       fontStyle: FontStyle.italic,
-     ),
-     ),
+    return MaterialApp(
+      title: 'ElectroHub Store',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF1B4332), // Forest Green theme matching design
+          primary: const Color(0xFF1B4332),
+        ),
+        scaffoldBackgroundColor: const Color(0xFFF8F9FA),
+        fontFamily: 'sans-serif',
+      ),
+      initialRoute: AppRoutes.onboarding,
+      routes: AppRoutes.routes,
+      onGenerateRoute: AppRoutes.onGenerateRoute,
     );
   }
 }

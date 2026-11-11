@@ -225,7 +225,7 @@ class _BelajarFormState extends State<BelajarForm> {
           nama: namaController.text,
           jk: _jk!,
           tglLahir: tglLahirController.text,
-          agama: _pilihAgama ?? '', tglLahir: '',
+          agama: _pilihAgama ?? '', 
         ),
       ),
     );
